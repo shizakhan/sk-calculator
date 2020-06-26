@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator By Shiza Khan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1 class="heading"><b><font color="white">CALCULATOR</font></b></h1>
+        <div class="main-div">
+            <div>
+                <input id="input" type="text" id="result" />
+            </div>
+            <div class="btn">
+                <button id="btn-clear" onclick="clearbtn()">C</button>
+                <button class="round-b"onclick="getNumber('%')">%</button>
+                <button class="round-b"onclick="getNumber('.')">.</button>
+                <button class="round-0"onclick="getNumber('+')">+</button>
+            </div>
+            <div class="btn">
+                <button class="round" onclick="getNumber('7')">7</button>
+                <button class="round" onclick="getNumber('8')">8</button>
+                <button class="round" onclick="getNumber('9')">9</button>
+                <button class="round-0" onclick="getNumber('*')">x</button>
+            </div>
+            <div class="btn">
+                <button class="round" onclick="getNumber('4')">4</button>
+                <button class="round" onclick="getNumber('5')">5</button>
+                <button class="round" onclick="getNumber('6')">6</button>
+                <button class="round-0" onclick="getNumber('/')">/</button>
+            </div>
+            <div class="btn">
+                <button class="round" onclick="getNumber('1')">1</button>
+                <button class="round" onclick="getNumber('2')">2</button>
+                <button class="round" onclick="getNumber('3')">3</button>
+                <button class="round-0" onclick="getNumber('-')">-</button>
+            </div>
+            <div class="btn">
+                <button class="round" onclick="getNumber('**')">x<sup>2</sup></button>
+                <button class="round" onclick="getNumber('0')">0</button>
+                <button class="round" onclick="getNumber('00')">00</button>
+                <button class="round-0" onclick="finalResult()" >=</button>
+                
+            </div>
+        </div>
+    </center>
+</body>
+<script src="app.js"></script>
+
+</html>
